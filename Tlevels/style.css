@@ -1,0 +1,518 @@
+*{
+	padding: 0px;
+	margin: 0px;
+    color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+	background-color: rgb(241, 235, 218);
+}
+
+#image_blue {
+	height: auto;
+	width: auto;
+}
+
+.blue{
+	background-color: rgb(55, 100, 131);
+}
+
+.pageHeader{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color:rgb(109, 109, 109);
+}
+
+.subTitles{
+	font-size: 2rem;
+}
+
+.cream{
+	background-color: rgb(241, 235, 218);
+}
+
+nav{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin: 0.5rem;
+}
+
+
+h1{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	font-size: 2.5em;
+	box-sizing: border-box;
+}
+
+li{
+	list-style-type: none;
+}
+.a:hover{
+	/* transition: all 10s ease-in-out; */
+	margin-top: 0rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	/* background-color: rgba(255, 0, 0, 0.438); */
+	background-color: rgba(118, 0, 30, 0.438);
+	border-bottom: solid 0.30rem rgb(255, 231, 17);
+	border-radius: 4px;
+}
+
+.b:hover{
+	margin-top: 0rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	background-color: rgba(255, 255, 255, 0.61);
+	border-bottom: solid 0.30rem rgb(230, 75, 3);
+	border-radius: 4px;
+}
+
+.c:hover{
+	margin-top: 0rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	background-color: rgba(255, 213, 213, 0.61);
+	border-bottom: solid 0.30rem rgb(79, 122, 214);
+	border-radius: 4px;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+
+	text-decoration: none;
+	color: black;
+	font-size: 2em;
+}
+
+#find-more {
+	background-color: rgb(55, 100, 131);
+	color: rgb(241, 235, 218);
+	padding: 0.8em;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#find-more:hover {
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+	border: solid 0.15em rgb(55, 100, 131);
+	transition: ease-in-out 0.08s;
+}
+
+img{
+    max-width: 100%;
+}
+
+.img-content{
+	max-width: 80%;
+	max-height: 50%;
+}
+
+.headerstyle{
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+}
+.center{
+    text-align: center;
+}
+
+.paddingtop{
+    padding-top: 1em;
+}
+.paddingtop2{
+    padding-top: 2em;
+}
+.paddingtop3{
+    padding-top: 3em;
+}
+
+.paddingbottom{
+	padding-bottom: 1em;
+}
+
+.paddingleft{
+	padding-left: 1em;
+}
+
+.paddingright{
+	padding-right: 1em;
+}
+
+.black{
+    color: black;
+}
+
+.blackbg{
+    background-color: black;
+}
+
+.darkblue{
+	color: darkblue;
+}
+
+.row{
+	width: 100%;
+	margin: 0px;
+}
+.row50{
+	width: 50%;
+	margin: 0px;
+}
+
+.row:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+
+
+.column{
+	float: left;
+}
+
+th{
+	border: black 0.05em solid;
+    color: rgb(255, 255, 255);
+	background-color: rgb(118, 0, 30);
+	text-align: center;
+    font-weight: bold;
+}
+td{
+	border: black 0.05em solid;
+	background-color: rgba(109, 109, 109, 0.521);
+	color: black;
+	text-align: center;
+}
+
+table{
+    border: black 0.05em solid;
+    background-color: rgba(255, 255, 255, 0.692);
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 50%;
+    color: black;
+
+}
+
+.fill{
+	background-color: black;
+}
+
+.footerMenuTop{
+    border-top: black solid 0.1em;
+    background: rgba(105, 7, 4, 0.774);
+    width: 100%;
+    height: 4em;
+	padding-top: 0em;
+    position: relative;
+    /* bottom: 0px;
+    left: 0px; */
+    text-align: left;
+    
+}
+
+.footerMenu{
+    background: rgba(105, 7, 4, 0.774);
+    width: 100%;
+    height: 4em;
+    padding-top: 0em;
+    /* position: relative; */
+    /* bottom: 0px;
+    left: 0px; */
+    text-align: left;
+
+
+}
+
+/*  */
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*  */
+
+@media screen{
+
+	.padding-buttons{
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	.red{
+		background-color: rgb(118, 0, 29);
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		font-size: 1.5rem;
+		
+	}
+
+	/* .navrow{
+		padding-bottom: 2em;
+	} */
+	.nav-link>a{
+		list-style-type: none;
+		text-decoration: none;
+		padding: 2rem;
+	}
+
+	.pageContent{
+		font-size: 1.5rem;
+	}
+	.pageContent>a{
+		font-size: 1rem;
+	}
+
+	.desktop-hide{
+		display: block;
+	}
+
+	.mobile-hide{
+		display: none;
+	}
+
+	.mobile-0{
+		width: 0%;
+	}
+
+	.mobile-0-5{
+		width: 4.159%;
+	}
+
+	.mobile-1{
+		width: 8.333%;
+	}
+		
+	.mobile-2{
+		width: 16.666%;
+	}
+		
+	.mobile-3{
+		width: 25%;
+	}
+		
+	.mobile-4{
+		width: 33.333%;
+	}
+		
+	.mobile-5{
+		width: 41.666%;
+	}
+		
+	.mobile-6{
+		width: 50%;
+	}
+		
+	.mobile-7{
+		width: 58.333%;
+	}
+		
+	.mobile-8{
+		width: 66.666%;
+	}
+		
+	.mobile-9{
+		width: 75%;
+	}
+		
+	.mobile-10{
+		width: 83.333%;
+	}
+		
+	.mobile-11{
+		width: 91.666%;
+	}
+		
+	.mobile-12{
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (min-device-width: 720px) {
+
+	.padding-buttons{
+		padding-right: 0em;
+		padding-left: 0em;
+	}
+
+
+	.red{
+		background-color: rgb(118, 0, 29);
+		padding-top: 1.2rem;
+		padding-bottom: 0.7rem;
+		
+	}
+
+	.nav-link>a{
+		list-style-type: none;
+		text-decoration: none;
+		padding: 1rem;
+	}
+
+	.pageContent{
+		font-size: 2rem;
+	}
+
+	.mobile-hide{
+		display: block;
+	}
+
+	.desktop-hide{
+		display: none;
+	}
+
+	.desktop-0{
+		width: 0%;
+	}
+		
+	.desktop-1{
+		width: 8.333%;
+	}
+	
+	.desktop-1-5{
+		width: 12.4995%;
+	}
+
+	.desktop-2{
+		width: 16.666%;
+	}
+		
+	.desktop-3{
+		width: 25%;
+	}
+		
+	.desktop-4{
+		width: 33.333%;
+	}
+		
+	.desktop-5{
+		width: 41.666%;
+	}
+		
+	.desktop-6{
+		width: 50%;
+	}
+		
+	.desktop-7{
+		width: 58.333%;
+	}
+		
+	.desktop-8{
+		width: 66.666%;
+	}
+		
+	.desktop-9{
+		width: 75%;
+	}
+		
+	.desktop-10{
+		width: 83.333%;
+	}
+		
+	.desktop-11{
+		width: 91.666%;
+	}
+		
+	.desktop-12{
+		width: 100%;
+	}
+}
